@@ -49,8 +49,8 @@ xjson::group().write(groups<std::string>{ {
 ### single data
 
 ```c++
-for (auto& it : xjson().Int<int>("key", "basic.txt")) it.first; // -> value
-for (auto& it : xjson().Int<int>("key", "basic.txt")) it.second; // -> key
+for (auto& it : xjson().Int<int>("key", "basic.txt")) it.first; // -> key
+for (auto& it : xjson().Int<int>("key", "basic.txt")) it.second; // -> value
 ```
 
 ### grouped data
