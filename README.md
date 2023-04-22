@@ -1,8 +1,3 @@
-## Compilers
-- g++
-- cmake
-- MSBuild
-
 
 ### how to include xjson?
 download xjson.hpp and put: 
