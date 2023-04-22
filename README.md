@@ -49,13 +49,13 @@ xjson::group().write(groups<std::string>{ {
 ### single data
 
 ```c++
-for (auto& it : xjson().Int<int>("key", "basic.txt")) it.first; // -> key
-for (auto& it : xjson().Int<int>("key", "basic.txt")) it.second; // -> value
+for (auto& it : xjson().string("key", "basic.txt")) it.first; // -> key
+for (auto& it : xjson().string("key", "basic.txt")) it.second; // -> value
 ```
 
 ### grouped data
 
 ```c++
-for (auto& it : xjson::group().Int<int>("group_name", "group.txt")) 
+for (auto& it : xjson::group().string("group_name", "group.txt")) 
 		if (it.first == "key") it.second; // -> it.first = key; it.second = value
 ```
