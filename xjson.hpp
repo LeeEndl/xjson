@@ -9,7 +9,7 @@ std::vector<std::string> index(std::string source, std::string indexOf) {
 	if (ilen == 0) return buffer;
 	while (i < slen) {
 		int This = 0;
-		while (i + This < slen and j < ilen and source[i + This] == indexOf[This]) This++;
+		while (i + This < slen and i < ilen and source[i + This] == indexOf[This]) This++;
 		if (This == ilen) buffer.push_back(source.substr(k, i - k)), i += ilen, k = i;
 		else i++;
 	}
